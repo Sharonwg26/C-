@@ -1,9 +1,3 @@
-/*****************************************
-* Exercise 6 
-* Name: ¯Î°a´A
-* Student Number: 107502550
-* Course: 2018-CE1003-B
-******************************************/
 #include<iostream>
 using namespace std;
 
@@ -177,7 +171,7 @@ void show(){  //show XXOO
     }
 }
 int main(){
-	int a=0,x=0,y=0,w1=0,w2=0; //ªì©l¤Æ 
+	int a=0,x=0,y=0,w1=0,w2=0; //ÂªÃ¬Â©lÂ¤Ã† 
 	while(n1<=8){
 		explanation();
 		cin >>a >>x >>y >>w1 >>w2;
@@ -213,5 +207,5 @@ int main(){
 		cout <<"\n";		
 	}
 	cout <<"\n";
-	return 0; //µ²§ôµ{¦¡ 
+	return 0; //ÂµÂ²Â§Ã´Âµ{Â¦Â¡ 
 }
