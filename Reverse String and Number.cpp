@@ -1,12 +1,6 @@
-/*****************************************
-* Assignment 8
-* Name: ¯Î°a´A
-* Student Number: 107502550
-* Course: 2018-CE1003-B
-******************************************/
-#include <iostream> //¤Ş¥Î¨ç¼Æ®w 
+#include <iostream> //å¼•ç”¨å‡½æ•¸åº« 
 #include <cstring>
- //¤Ş¥Î¨ç¼Æ®w 
+ //å¼•ç”¨å‡½æ•¸åº« 
 using namespace std;
 
 string ReverseString(string);
@@ -21,7 +15,7 @@ int main(){
         cin >>feature;
         if(feature=="sentence"){
             string sentence("");
-            getline(cin,sentence); //¥h°£¦h¾lªº´«¦æ get rid of "\n"
+            getline(cin,sentence); //å»é™¤å¤šé¤˜çš„æ›è¡Œ get rid of "\n"
             getline(cin,sentence);
             cout <<ReverseString(sentence) <<endl;
         }
@@ -39,13 +33,13 @@ int main(){
             cout <<endl;
         }
     }
-    return 0; //µ²§ôµ{¦¡¡A¼K¼K¼K 
+    return 0; //çµæŸç¨‹å¼ï¼Œå˜¿å˜¿å˜¿ 
 }
 string ReverseString(string sentence){
-	string s(sentence.rbegin(),sentence.rend()); //¤ÏÂà¦r¦ê 
+	string s(sentence.rbegin(),sentence.rend()); //åè½‰å­—ä¸² 
     return s; 
 }
-void ReverseInts(int numbers[],int length){ //¤ÏÂà¦r¦ê 
+void ReverseInts(int numbers[],int length){ //åè½‰å­—ä¸² 
 	for(int i=0;i<length/2;i++)
 	swap(numbers[i],numbers[length-i-1]);
 }
