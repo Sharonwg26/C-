@@ -1,67 +1,60 @@
-/*****************************************
-* Assignment 6
-* Name: ¯Î°a´A
-* Student Number: 107502550
-* Course: 2018-CE1003-B
-******************************************/
-
-#include <iostream> //¤Ş¥Î¨ç¼Æ
-#include <cstdlib> //¤Ş¥Î¨ç¼Æ
-#include <ctime> //¤Ş¥Î¨ç¼Æ
+#include <iostream> //å¼•ç”¨å‡½æ•¸
+#include <cstdlib> //å¼•ç”¨å‡½æ•¸
+#include <ctime> //å¼•ç”¨å‡½æ•¸
 using namespace std;
 
-int main(){ //¥Dµ{¦¡
-	int Ans,MaxHP=0,HP,guess,min=0,max=100,i=0,x,y; //³]©w¦U­ÓÅÜ¼Æ¡A»P½d³ò°_©l
-	srand(time(NULL)); // µ¹¤@­Ó®É¶¡µê¼Æ
-	cout <<"The answer number is : "; //¿é¥X¥y¤l
-	for (int i=0;i<1;i++){ //³]©wÀH¾÷ÅÜ¼Æ
-		Ans=rand()%101; //­p³]©w½d³ò
-		cout <<Ans <<"\n"; //¿é¥XAns
+int main(){ //ä¸»ç¨‹å¼
+	int Ans,MaxHP=0,HP,guess,min=0,max=100,i=0,x,y; //è¨­å®šå„å€‹è®Šæ•¸ï¼Œèˆ‡ç¯„åœèµ·å§‹
+	srand(time(NULL)); // çµ¦ä¸€å€‹æ™‚é–“è™›æ•¸
+	cout <<"The answer number is : "; //è¼¸å‡ºå¥å­
+	for (int i=0;i<1;i++){ //è¨­å®šéš¨æ©Ÿè®Šæ•¸
+		Ans=rand()%101; //è¨ˆè¨­å®šç¯„åœ
+		cout <<Ans <<"\n"; //è¼¸å‡ºAns
 	}
-	cout <<"Set your MaxHP : "; //¿é¥X¥y¤l
-    cin  >>MaxHP; //¿é¤J
+	cout <<"Set your MaxHP : "; //è¼¸å‡ºå¥å­
+    cin  >>MaxHP; //è¼¸å…¥
 	cout <<"HP : " ;
 	for(int x=MaxHP;x>0;x--)
-	cout <<"¡¯" ; //¿é¥X¡¯
+	cout <<"ï¼Š" ; //è¼¸å‡ºï¼Š
 	cout <<"\n\n";
-	while (guess!=Ans){//°j°é
-        i++; //ÅÜ¼Æi+1
+	while (guess!=Ans){//è¿´åœˆ
+        i++; //è®Šæ•¸i+1
         cout <<"Please guess a number from " <<min <<" to " <<max <<"\nYour guess : ";
-		cin  >> guess; //¿é¤J¼Æ¦r
-		HP=MaxHP-i; //³]©wHP
-		if(guess==Ans){ //³]©w±ø¥ó
-			cout <<"Congratulations! You get the answer in " << i <<" times\n"; //¿é¥X¥y¤l
-			break; //¸õ¥X°j°é
+		cin  >> guess; //è¼¸å…¥æ•¸å­—
+		HP=MaxHP-i; //è¨­å®šHP
+		if(guess==Ans){ //è¨­å®šæ¢ä»¶
+			cout <<"Congratulations! You get the answer in " << i <<" times\n"; //è¼¸å‡ºå¥å­
+			break; //è·³å‡ºè¿´åœˆ
 		}
-		else if(HP==0){ //³]©w±ø¥ó		
+		else if(HP==0){ //è¨­å®šæ¢ä»¶		
 			cout <<"HP : ";
 			for(int x=HP;x>0;x--)
-			cout <<"¡¯" ; //¿é¥X¡¯
+			cout <<"ï¼Š" ; //è¼¸å‡ºï¼Š
 			for(int y=i;y>0;y--)
-			cout <<"¡Ä "; //¿é¥X¡Ä
+			cout <<"ï¼¿ "; //è¼¸å‡ºï¼¿
 			cout <<"\n" ;
-			cout <<"Sorry, you die \n"; //¿é¥X¥y¤l
-			break; //¸õ¥X°j°é
+			cout <<"Sorry, you die \n"; //è¼¸å‡ºå¥å­
+			break; //è·³å‡ºè¿´åœˆ
 		}
-		else if(guess<min|| guess>max){ //³]©w±ø¥ó½d³ò
-			cout <<"Your guess is out of range, please try again.\nHP : " ;//¿é¥X¥y¤l¡BHP
+		else if(guess<min|| guess>max){ //è¨­å®šæ¢ä»¶ç¯„åœ
+			cout <<"Your guess is out of range, please try again.\nHP : " ;//è¼¸å‡ºå¥å­ã€HP
 			for(int x=HP;x>0;x--)
-			cout <<"¡¯" ; //¿é¥X¡¯
+			cout <<"ï¼Š" ; //è¼¸å‡ºï¼Š
 			for(int y=i;y>0;y--)
-			cout <<"¡Ä " ; //¿é¥X¡Ä 
+			cout <<"ï¼¿ " ; //è¼¸å‡ºï¼¿ 
 			cout <<"\n\n" ;
-			continue; //¸õ¦^¤W­±°j°é
+			continue; //è·³å›ä¸Šé¢è¿´åœˆ
 		}
-		else if(guess>Ans||guess<Ans) { //³]©w±ø¥ó
-			cout<<"Wrong answer.\nHP:"; //¿é¥X¥y¤l¡BHP
+		else if(guess>Ans||guess<Ans) { //è¨­å®šæ¢ä»¶
+			cout<<"Wrong answer.\nHP:"; //è¼¸å‡ºå¥å­ã€HP
 			for(int x=HP;x>0;x--)
-			cout <<"¡¯" ; //¿é¥X¡¯
+			cout <<"ï¼Š" ; //è¼¸å‡ºï¼Š
 			for(int y=i;y>0;y--)
-			cout <<"¡Ä " ; //¿é¥X¡Ä  
+			cout <<"ï¼¿ " ; //è¼¸å‡ºï¼¿  
 			cout <<"\n\n" ;
-		(guess>Ans)?max=guess:min=guess; //¥Î¤T¤¸¹Bºâ¦¡³]©wmax,min
+		(guess>Ans)?max=guess:min=guess; //ç”¨ä¸‰å…ƒé‹ç®—å¼è¨­å®šmax,min
 		}
 	}
-	return 0; //µ²§ôµ{¦¡¡A¼K¼K¼K
+	return 0; //çµæŸç¨‹å¼ï¼Œå˜¿å˜¿å˜¿
 }
 
