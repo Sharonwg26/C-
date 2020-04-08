@@ -1,35 +1,29 @@
-/*****************************************
-* Exercise 4
-* Name: ¯Î°a´A
-* Student Number: 107502550
-* Course: 2018-CE1003-B
-******************************************/
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
 using namespace std;
 
-enum animal{cat,dog,bird,fish,rabbit}; //ªTÁ|
+enum animal{cat,dog,bird,fish,rabbit}; //æžšèˆ‰
 int main()
 {
-	srand(time(NULL)); //³]©wµê¼Æ
-	int num1,num2,x; //³]©wÅÜ¼Æ
-	cout <<"Input the number of cases : "; //¿é¥X¥y¤l
-	cin  >>num1; //¿é¤Jnum1
-	for (int i=0;i<num1;i++){ //°j°é	
-	int cat1=0,dog1=0,bird1=0,fish1=0,rabbit1=0; //³]©wÅÜ¼Æ
-	cout <<"Input the number of animals : "; //¿é¥X¥y¤l
-	cin  >>num2; //¿é¤Jnum2
-	for (int i=0;i<num2;i++){ //³]©w°j°é
-		x=rand()%5; //²£¥ÍÀH¾÷¼Æ
+	srand(time(NULL)); //è¨­å®šè™›æ•¸
+	int num1,num2,x; //è¨­å®šè®Šæ•¸
+	cout <<"Input the number of cases : "; //è¼¸å‡ºå¥å­
+	cin  >>num1; //è¼¸å…¥num1
+	for (int i=0;i<num1;i++){ //è¿´åœˆ	
+	int cat1=0,dog1=0,bird1=0,fish1=0,rabbit1=0; //è¨­å®šè®Šæ•¸
+	cout <<"Input the number of animals : "; //è¼¸å‡ºå¥å­
+	cin  >>num2; //è¼¸å…¥num2
+	for (int i=0;i<num2;i++){ //è¨­å®šè¿´åœˆ
+		x=rand()%5; //ç”¢ç”Ÿéš¨æ©Ÿæ•¸
 		if(x==cat) cat1++;
 		if(x==dog) dog1++;
 		if(x==bird) bird1++;
 		if(x==fish) fish1++;
 		if(x==rabbit) rabbit1++;
 		}
-		num2=cat1+dog1+bird1+fish1+rabbit1; //ÀH¾÷¾ð¬Û¥[µ¥©ónum2
-    	cout <<"cat:\t" <<cat1 <<"\ndog:\t" <<dog1 <<"\nbird:\t" <<bird1 <<"\nfish:\t" <<fish1 <<"\nrabbit:\t" <<rabbit1 <<"\n\n"; //¿é¥X¥y¤l
+		num2=cat1+dog1+bird1+fish1+rabbit1; //éš¨æ©Ÿæ¨¹ç›¸åŠ ç­‰æ–¼num2
+    	cout <<"cat:\t" <<cat1 <<"\ndog:\t" <<dog1 <<"\nbird:\t" <<bird1 <<"\nfish:\t" <<fish1 <<"\nrabbit:\t" <<rabbit1 <<"\n\n"; //è¼¸å‡ºå¥å­
 	}
-	return 0; //µ²§ôµ{¦¡¡A¼K¼K¼K
+	return 0; //çµæŸç¨‹å¼ï¼Œå˜¿å˜¿å˜¿
 }
