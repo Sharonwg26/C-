@@ -1,26 +1,20 @@
-/*****************************************
-* Exercise 7 
-* Name: ¯Î°a´A
-* Student Number: 107502550
-* Course: 2018-CE1003-B
-******************************************/
 #include<iostream>
 #include <string>
 using namespace std;
 
 int main(){
-	int num=0,i=0,e=0; //ªì©l¤Æ 
-	cin >>num; //¿é¤J 
+	int num=0,i=0,e=0; //åˆå§‹åŒ– 
+	cin >>num; //è¼¸å…¥ 
 	string sentence;
 	getline(cin,sentence);  
-	for (e=num;e>0;e--){ //°j°é 
+	for (e=num;e>0;e--){ //è¿´åœˆ 
 	getline(cin,sentence);
     	for(i=0;i<sentence.length();i++){
     		if((sentence[i]>='A')&&(sentence[i]<='Z')){        
-  		    sentence[i]+=32; //¥[¤W32ÅÜ¦¨¤p¼g
+  		    sentence[i]+=32; //åŠ ä¸Š32è®Šæˆå°å¯«
 			}
 			else if((sentence[i]>='a')&&(sentence[i]<='z'))
-   	 	   sentence[i]-=32; //´î32ÅÜ¦¨¤j¼g
+   	 	   sentence[i]-=32; //æ¸›32è®Šæˆå¤§å¯«
 			}
 		cout<<sentence <<"\n" ;
 	}
