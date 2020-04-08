@@ -1,9 +1,3 @@
-/*****************************************
-* Exercise  8
-* Name:¯Î°a´A 
-* Student Number: 107502550
-* Course: 2018-CE1003-B
-******************************************/
 #include<iostream>
 #include <cstring>
 using namespace std;
@@ -44,5 +38,5 @@ int main(){
 			append(arry,len,input,pos);
 		cout <<"===================================" <<endl ;
 		}
-	return 0; //µ²§ôµ{¦¡¡A¼K¼K¼K 
+	return 0; //çµæŸç¨‹å¼ï¼Œå˜¿å˜¿å˜¿ 
 }
