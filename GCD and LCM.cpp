@@ -1,22 +1,13 @@
-/*****************************************
-* Assignment 5
-* Name: 翁軒媚
-* Student Number: 107502550
-* Course: 2018-CE1003-B
-******************************************/
-
 #include<iostream>
 using namespace std;
 
-int gcd(int x,int y) //設定gcd變數
-{
+int gcd(int x,int y){ //設定gcd變數
 	if(x!=0&&y!=0) //設定範圍
 	return gcd((x>=y)?x%y:x,(x<y)?y%x:y); //用三元運算式計算GCD
 	else return(x!=0)?x:y;
 }
 
-int lcm(int x,int y) //設定lcm變數
-{
+int lcm(int x,int y){ //設定lcm變數
 	return x*y/gcd(x,y); //計算lcm
 }
 
