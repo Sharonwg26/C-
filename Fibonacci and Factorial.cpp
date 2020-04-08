@@ -1,10 +1,3 @@
-/*****************************************
-* Exercise 3
-* Name: 翁軒媚
-* Student Number: 107502550
-* Course: 2018-CE1003-B
-******************************************/
-
 #include <iostream>
 using namespace std;
 
