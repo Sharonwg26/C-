@@ -1,10 +1,4 @@
-/*****************************************
-* Assignment 10 
-* Name: ¯Î°a´A
-* Student Number: 107502550
-* Course: 2018-CE1003-B
-******************************************/
-#include <iostream> //¤Ş¥Î¨ç¼Æ®w 
+#include <iostream> //å¼•ç”¨å‡½æ•¸åº« 
 #include <string>
 using namespace std;
 
@@ -67,5 +61,5 @@ int main(void){
 		mat.display4();
 		}
 	}
-	return 0; //µ²§ôµ{¦¡¡A¼K¼K¼K 
+	return 0; //çµæŸç¨‹å¼ï¼Œå˜¿å˜¿å˜¿ 
 }
