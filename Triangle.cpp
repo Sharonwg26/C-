@@ -1,10 +1,3 @@
-/*****************************************
-* Assignment 3
-* Name: ¯Î°a´A
-* Student Number: 107502550
-* Course: 2018-CE1003-B
-******************************************/
-
 #include<iostream>
 #include<cmath>
 
@@ -12,38 +5,38 @@ using namespace std;
 
 int main()
 {
-    double a,b,c,s,area,check; //³]©wÅÜ¼Æ 
-    cout<<"Please key in first number:\n"; //Åã¥Ü¥y¤l
-    cin >>a; //¿é¤JÅÜ¼Æa 
-    cout<<"Please key in second number:\n"; //Åã¥Ü¥y¤l
-    cin >>b; //¿é¤JÅÜ¼Æb
-    cout<<"Please key in third number:\n"; //Åã¥Ü¥y¤l
-    cin >>c; //¿é¤JÅÜ¼Æc
+    double a,b,c,s,area,check; //è¨­å®šè®Šæ•¸ 
+    cout<<"Please key in first number:\n"; //é¡¯ç¤ºå¥å­
+    cin >>a; //è¼¸å…¥è®Šæ•¸a 
+    cout<<"Please key in second number:\n"; //é¡¯ç¤ºå¥å­
+    cin >>b; //è¼¸å…¥è®Šæ•¸b
+    cout<<"Please key in third number:\n"; //é¡¯ç¤ºå¥å­
+    cin >>c; //è¼¸å…¥è®Šæ•¸c
 
-    s=(a+b+c)/2; //ºâ©Pªø°£¥H¤G 
-    check=sqrt(s*(s-a)*(s-b)*(s-c)); //¥Î®üÀs¤½¦¡ºâ­±¿n 
+    s=(a+b+c)/2; //ç®—å‘¨é•·é™¤ä»¥äºŒ 
+    check=sqrt(s*(s-a)*(s-b)*(s-c)); //ç”¨æµ·é¾å…¬å¼ç®—é¢ç© 
 
-    if (check <0) //¦pªG­±¿n¤p©ó0 
-        cout<<"Total area = 0\n"; //Åã¥Ü¥y¤l
+    if (check <0) //å¦‚æœé¢ç©å°æ–¼0 
+        cout<<"Total area = 0\n"; //é¡¯ç¤ºå¥å­
     else{
         area =(check);  
-        cout<<"Total area = " <<check <<endl; //Åã¥Üµ²ªG 
+        cout<<"Total area = " <<check <<endl; //é¡¯ç¤ºçµæœ 
     }
-   if(a+b>c&&c+a>b&&c+b>a){ //¥Î¤T¨¤¤½¦¡§PÂ_ 
-        if(a*a+b*b==c*c||a*a+c*c==b*b||b*b+c*c==a*a) //¥Î¤T¨¤¤½¦¡§PÂ_  
-            cout<<(a==b||a==c||b==c)?"Isosceles right triangle\n":"Right triangle\n"; //Åã¥Ü¥y¤l
-		else if (a==b==c) //¥Î¤T¨¤¤½¦¡§PÂ_  
-                cout<<"Regular triangle\n"; //Åã¥Ü¥y¤l
-            else if(a==b&&a==c&&b==c) //¥Î¤T¨¤¤½¦¡§PÂ_  
-                cout<<"Isosceles triangle\n"; //Åã¥Ü¥y¤l
+   if(a+b>c&&c+a>b&&c+b>a){ //ç”¨ä¸‰è§’å…¬å¼åˆ¤æ–· 
+        if(a*a+b*b==c*c||a*a+c*c==b*b||b*b+c*c==a*a) //ç”¨ä¸‰è§’å…¬å¼åˆ¤æ–·  
+            cout<<(a==b||a==c||b==c)?"Isosceles right triangle\n":"Right triangle\n"; //é¡¯ç¤ºå¥å­
+		else if (a==b==c) //ç”¨ä¸‰è§’å…¬å¼åˆ¤æ–·  
+                cout<<"Regular triangle\n"; //é¡¯ç¤ºå¥å­
+            else if(a==b&&a==c&&b==c) //ç”¨ä¸‰è§’å…¬å¼åˆ¤æ–·  
+                cout<<"Isosceles triangle\n"; //é¡¯ç¤ºå¥å­
         else
-            cout<<"Triangle\n"; //Åã¥Ü¥y¤l
+            cout<<"Triangle\n"; //é¡¯ç¤ºå¥å­
 	}
 
     else
-        cout << "Not triangle\n"; //Åã¥Ü¥y¤l 
-    system("pause"); //¼È°±°õ¦æ 
-    return 0; //µ²§ôµ{¦¡¡A¼K¼K¼K
+        cout << "Not triangle\n"; //é¡¯ç¤ºå¥å­ 
+    system("pause"); //æš«åœåŸ·è¡Œ 
+    return 0; //çµæŸç¨‹å¼ï¼Œå˜¿å˜¿å˜¿
 }
 
 
