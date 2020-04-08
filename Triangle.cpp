@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+int main(){
     double a,b,c,s,area,check; //設定變數 
     cout<<"Please key in first number:\n"; //顯示句子
     cin >>a; //輸入變數a 
